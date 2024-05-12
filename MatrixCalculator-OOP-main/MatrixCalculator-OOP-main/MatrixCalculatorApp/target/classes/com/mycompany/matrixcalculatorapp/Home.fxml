@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.matrixcalculatorapp.PrimaryController">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="600.0" pickOnBounds="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-0.39999999999997726">
+         <image>
+            <Image url="@../../../bg.jpg" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="0.68" specularConstant="0.92" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               
+                                    </Lighting>
+         </effect>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <AnchorPane maxHeight="487.0" maxWidth="643.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="601.0" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="operationsButton" layoutX="229.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleOperationsButtonClick" prefHeight="26.0" prefWidth="154.0" text="Matrix Operations" textFill="#0e1778" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="171.8">
+               <font>
+                  <Font name="Calisto MT" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="closeButton" layoutX="229.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleCloseButtonClick" prefHeight="26.0" prefWidth="154.0" text="Close" textFill="#0e1778" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="171.8">
+               <font>
+                  <Font name="Calisto MT" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="logoImageView" fitHeight="206.0" fitWidth="318.0" layoutX="168.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="132.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="157.06304321289065" AnchorPane.topAnchor="70.0">
+               <image>
+                  <Image url="@../../../logo.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
